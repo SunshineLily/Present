@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3A600123213D2DB30062E6DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A600122213D2DB30062E6DC /* AppDelegate.m */; };
-		3A600126213D2DB30062E6DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A600125213D2DB30062E6DC /* ViewController.m */; };
 		3A600129213D2DB30062E6DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A600127213D2DB30062E6DC /* Main.storyboard */; };
 		3A60012B213D2DB60062E6DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A60012A213D2DB60062E6DC /* Assets.xcassets */; };
 		3A60012E213D2DB60062E6DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A60012C213D2DB60062E6DC /* LaunchScreen.storyboard */; };
 		3A600131213D2DB60062E6DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A600130213D2DB60062E6DC /* main.m */; };
 		3A60013B213D2DB60062E6DC /* TestPresentVCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A60013A213D2DB60062E6DC /* TestPresentVCUITests.m */; };
+		3A600147213D39170062E6DC /* PresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A600146213D39170062E6DC /* PresentedViewController.m */; };
+		3A600148213D3BDE0062E6DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A600125213D2DB30062E6DC /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		3A600136213D2DB60062E6DC /* TestPresentVCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestPresentVCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A60013A213D2DB60062E6DC /* TestPresentVCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPresentVCUITests.m; sourceTree = "<group>"; };
 		3A60013C213D2DB60062E6DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A600145213D39170062E6DC /* PresentedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentedViewController.h; sourceTree = "<group>"; };
+		3A600146213D39170062E6DC /* PresentedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				3A600122213D2DB30062E6DC /* AppDelegate.m */,
 				3A600124213D2DB30062E6DC /* ViewController.h */,
 				3A600125213D2DB30062E6DC /* ViewController.m */,
+				3A600145213D39170062E6DC /* PresentedViewController.h */,
+				3A600146213D39170062E6DC /* PresentedViewController.m */,
 				3A600127213D2DB30062E6DC /* Main.storyboard */,
 				3A60012A213D2DB60062E6DC /* Assets.xcassets */,
 				3A60012C213D2DB60062E6DC /* LaunchScreen.storyboard */,
@@ -203,7 +208,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A600126213D2DB30062E6DC /* ViewController.m in Sources */,
+				3A600148213D3BDE0062E6DC /* ViewController.m in Sources */,
+				3A600147213D39170062E6DC /* PresentedViewController.m in Sources */,
 				3A600131213D2DB60062E6DC /* main.m in Sources */,
 				3A600123213D2DB30062E6DC /* AppDelegate.m in Sources */,
 			);
@@ -362,7 +368,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M9RDKX4YNM;
 				INFOPLIST_FILE = TestPresentVC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,7 +386,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M9RDKX4YNM;
 				INFOPLIST_FILE = TestPresentVC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

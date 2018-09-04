@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PresentedViewController.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
+
+- (IBAction)testAction:(id)sender {
+    PresentedViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"PresentedViewController"];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
 
 
 - (void)didReceiveMemoryWarning {
